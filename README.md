@@ -391,3 +391,121 @@ trueChain 翻译<br>
 2.create_shard() and speculative_transaction()（初链黄皮书图二）POW链中的funcs<br>
 ####POW链中的funcs<br>
 <p>阶段1：fPOW（果实链）</P>
+*re_elect()  - POW挖掘功能，使用[Theta,LRU,stake_in/out]( snailchain内部块的数量)，基于以下之一：<br>
+-由于腐败导致视图更改<br>
+-物理时间戳限制引发的第K天触发<br>
+-节点应该是DailyBFT委员会的过期Tstamp时间间隔会员<br>
+- update_snailchain()从N个PBFT节点接收done（_，_）散列，并由每个节点执行，然后将链上的节点写入到snailchain总账中。<br>
+###钱包工程<br>
+####模拟<br>
+<p>确定以下内容</p>
+1.	分片大小的上下限<br>
+2.	Lambda安全参数边界<br>
+3.	Theta手动参数<br>
+<p>测试系列</p>
+1.	检查一致性和活性<br>
+2.	检查安全性<br>
+3.	腐败检查<br>
+###智能合约重新设计/可靠性<br>
+###TVM / WASM<br>
+<P>文档</p><br>
+<P>附录</p><br>
+<P>符号</p><br>
+<table border=0 cellpadding=0 cellspacing=0 width=359 style='border-collapse:
+ collapse;table-layout:fixed;width:269pt'>
+ <col width=96 style='mso-width-source:userset;mso-width-alt:3072;width:72pt'>
+ <col width=263 style='mso-width-source:userset;mso-width-alt:8416;width:197pt'>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl65 width=96 style='height:15.0pt;width:72pt'>变量</td>
+  <td class=xl66 width=263 style='width:197pt'>意义</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl69 width=96 style='height:15.0pt;width:72pt'>tx</td>
+  <td class=xl68 width=263 style='width:197pt'>交易</td>
+ </tr>
+ <tr height=37 style='mso-height-source:userset;height:27.75pt'>
+  <td height=37 class=xl69 width=96 style='height:27.75pt;width:72pt'>l</td>
+  <td class=xl68 width=263 style='width:197pt'>每个BFT实例内的事务的序列号</td>
+ </tr>
+ <tr height=57 style='mso-height-source:userset;height:42.75pt'>
+  <td height=57 class=xl69 width=96 style='height:42.75pt;width:72pt'>LOG</td>
+  <td class=xl68 width=263 style='width:197pt'>每个节点输出的完全有序的日志，LOG总是按顺序填充</td>
+ </tr>
+ <tr height=48 style='mso-height-source:userset;height:36.0pt'>
+  <td height=48 class=xl69 width=96 style='height:36.0pt;width:72pt'>log</td>
+  <td class=xl68 width=263 style='width:197pt'>一个BFT实例的日志，称为日志</td>
+ </tr>
+ <tr height=55 style='mso-height-source:userset;height:41.25pt'>
+  <td height=55 class=xl70 width=96 style='height:41.25pt;width:72pt'>log[l :
+  l′]</td>
+  <td class=xl68 width=263 style='width:197pt'>在日志中编号为l到l'的交易</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl70 width=96 style='height:15.0pt;width:72pt'>log[: l]</td>
+  <td class=xl71 width=263 style='width:197pt'>log[1 : l]</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl70 width=96 style='height:15.0pt;width:72pt'>λ</td>
+  <td class=xl68 width=263 style='width:197pt'>安全参数</td>
+ </tr>
+ <tr height=34 style='mso-height-source:userset;height:25.5pt'>
+  <td height=34 class=xl70 width=96 style='height:25.5pt;width:72pt'>α</td>
+  <td class=xl68 width=263 style='width:197pt'>对方的哈希片段</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl70 width=96 style='height:15.0pt;width:72pt'>δ</td>
+  <td class=xl68 width=263 style='width:197pt'>网络最大实际时延</td>
+ </tr>
+ <tr height=49 style='mso-height-source:userset;height:36.75pt'>
+  <td height=49 class=xl70 width=96 style='height:36.75pt;width:72pt'>Δ</td>
+  <td class=xl68 width=263 style='width:197pt'>网络延迟的上界（通常松散）</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl70 width=96 style='height:30.0pt;width:72pt'>csize</td>
+  <td class=xl68 width=263 style='width:197pt'>委员会大小，我们的协议集Csisie: =<font
+  class="font9">λ</font></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl70 width=96 style='height:15.75pt;width:72pt'>th</td>
+  <td class=xl72 width=263 style='width:197pt'>th := <font class="font10">&#8968;</font><font
+  class="font9">csize/3</font><font class="font10">&#8969;</font><font class="font9">,</font><font
+  class="font6">一个阈值</font></td>
+ </tr>
+ <tr height=35 style='height:26.25pt'>
+  <td height=35 class=xl70 width=96 style='height:26.25pt;width:72pt'>lower(R),
+  upper(R)</td>
+  <td class=xl72 width=263 style='width:197pt'>lower(R) := (R &#8722; 1)csize + 1,
+  upper(R) := R · csize</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl70 width=96 style='height:15.0pt;width:72pt'>chain</td>
+  <td class=xl68 width=263 style='width:197pt'>底层SnayLink协议中的节点局部链</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl70 width=96 style='height:15.0pt;width:72pt'>chain[:
+  &#8722;λ]</td>
+  <td class=xl68 width=263 style='width:197pt'>除了节点的局部链的最后一个块</td>
+ </tr>
+ <tr height=90 style='mso-height-source:userset;height:67.5pt'>
+  <td height=90 class=xl70 width=96 style='height:67.5pt;width:72pt'>MinersOf(chain[s
+  : t])</td>
+  <td class=xl68 width=263 style='width:197pt'>在链[s:t]中挖掘每个块的公共密钥。可能有几个公钥属于同一个节点</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl70 width=96 style='height:15.0pt;width:72pt'>{msg}pk&#8722;1</td>
+  <td class=xl68 width=263 style='width:197pt'>签名消息MSG，其验证密钥是PK</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl70 width=96 style='height:15.0pt;width:72pt'>Tbft</td>
+  <td class=xl68 width=263 style='width:197pt'>基础BFT方案的活性参数</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=96 style='width:72pt'></td>
+  <td width=263 style='width:197pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+
+
