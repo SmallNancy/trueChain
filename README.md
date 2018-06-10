@@ -308,5 +308,7 @@ trueChain 翻译<br>
  </tr>
  <![endif]>
 </table>
-  <right>(Q1)1、2、3月</right>
   <p text-align="right">(Q1)1、2、3月</p>
+  <p text-align="right">(Q2)4、5、6月</p>
+  <p text-align="right">(Q3)7、8、9月</p>
+  <p text-align="right">(Q4)10、11、12月</p>
