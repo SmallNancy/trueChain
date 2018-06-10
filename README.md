@@ -312,3 +312,82 @@ trueChain 翻译<br>
   <p text-align="right">(Q2)4、5、6月</p>
   <p text-align="right">(Q3)7、8、9月</p>
   <p text-align="right">(Q4)10、11、12月</p>
+  ###核心共识：<br>
+  ####在PBFT链funcs：<br>
+  <P>阶段一：</p><br>
+  *更新: 进一步细分*<br>
+  
+<table border=0 cellpadding=0 cellspacing=0 width=598 style='border-collapse:
+ collapse;table-layout:fixed;width:448pt'>
+ <col width=139 style='mso-width-source:userset;mso-width-alt:4448;width:104pt'>
+ <col width=459 style='mso-width-source:userset;mso-width-alt:14688;width:344pt'>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl65 width=139 style='height:15.0pt;width:104pt'>方法</td>
+  <td class=xl66 width=459 style='width:344pt'>功能</td>
+ </tr>
+ <tr height=62 style='mso-height-source:userset;height:46.5pt'>
+  <td height=62 class=xl67 width=139 style='height:46.5pt;width:104pt'>dailyLogOutput()</td>
+  <td class=xl68 width=459 style='width:344pt'>将日志输出到done（_，_）然后发送到非成员节点</td>
+ </tr>
+ <tr height=61 style='mso-height-source:userset;height:45.75pt'>
+  <td height=61 class=xl67 width=139 style='height:45.75pt;width:104pt'>CreateLOG()</td>
+  <td class=xl68 width=459 style='width:344pt'>根据所有其他节点的日志为每日日志创建元组，跟踪签名日志由非委员会成员负责</td>
+ </tr>
+ <tr height=71 style='mso-height-source:userset;height:53.25pt'>
+  <td height=71 class=xl67 width=139 style='height:53.25pt;width:104pt'>mempoolSubprotocol()</td>
+  <td class=xl68 width=459 style='width:344pt'>使用Union集合来跟踪传入交易,支持查询方法返回确认的交易.</td>
+ </tr>
+ <tr height=62 style='mso-height-source:userset;height:46.5pt'>
+  <td height=62 class=xl67 width=139 style='height:46.5pt;width:104pt'>DailyOffchainProtocol()</td>
+  <td class=xl68 width=459 style='width:344pt'>进行有条件的选举委员会成员,<font class="font5">
+  </font><font class="font6">基于节点是否是BFT成员。</font></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl67 width=139 style='height:15.0pt;width:104pt'>keygen()</td>
+  <td class=xl68 width=459 style='width:344pt'>　</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl67 width=139 style='height:15.0pt;width:104pt'>forkVirtualNodeBFT()</td>
+  <td class=xl68 width=459 style='width:344pt'>　</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl67 width=139 style='height:15.0pt;width:104pt'>　</td>
+  <td class=xl68 width=459 style='width:344pt'>一个历史日志</td>
+ </tr>
+ <tr height=35 style='height:26.25pt'>
+  <td height=35 class=xl67 width=139 style='height:26.25pt;width:104pt'>complainToSnailChain()</td>
+  <td class=xl68 width=459 style='width:344pt'>触发器<font class="font7">re_elect()</font></td>
+ </tr>
+ <tr height=57 style='mso-height-source:userset;height:42.75pt'>
+  <td height=57 class=xl67 width=139 style='height:42.75pt;width:104pt'>ViewChange()</td>
+  <td class=xl68 width=459 style='width:344pt'>触发viewchange，并反过来，触发complainToSnailChain（）</td>
+ </tr>
+ <tr height=52 style='mso-height-source:userset;height:39.0pt'>
+  <td height=52 class=xl67 width=139 style='height:39.0pt;width:104pt'>createTxTuple()</td>
+  <td class=xl68 width=459 style='width:344pt'>（R，l，tx）R - 当前日期，l是随机数（当天txn的序列）</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl67 width=139 style='height:15.0pt;width:104pt'>SeedSelectorVRF()</td>
+  <td class=xl68 width=459 style='width:344pt'>　</td>
+ </tr>
+ <tr height=54 style='mso-height-source:userset;height:40.5pt'>
+  <td height=54 class=xl67 width=139 style='height:40.5pt;width:104pt'>gossipTx()</td>
+  <td class=xl68 width=459 style='width:344pt'>正直的委员会成员然后将签名的元组闲聊到网络上</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl67 width=139 style='height:30.0pt;width:104pt'>createSnapShot()</td>
+  <td class=xl68 width=459 style='width:344pt'>创建一个世界状态快照</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=139 style='width:104pt'></td>
+  <td width=459 style='width:344pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+<p>阶段二：</p><br>
+1.时间戳验证（初链黄皮书图一）<br>
+2.create_shard() and speculative_transaction()（初链黄皮书图二）POW链中的funcs<br>
+####POW链中的funcs<br>
+<p>阶段1：fPOW（果实链）</P>
