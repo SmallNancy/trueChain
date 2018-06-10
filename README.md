@@ -308,10 +308,10 @@ trueChain 翻译<br>
  </tr>
  <![endif]>
 </table>
-  <p text-align="right">(Q1)1、2、3月</p>
-  <p text-align="right">(Q2)4、5、6月</p>
-  <p text-align="right">(Q3)7、8、9月</p>
-  <p text-align="right">(Q4)10、11、12月</p>
+  <p style="text-align=right">(Q1)1、2、3月</p>
+  <p style="text-align=right">(Q2)4、5、6月</p>
+  <p style="text-align=right">(Q3)7、8、9月</p>
+  <p style="text-align=right">(Q4)10、11、12月</p>
   ###核心共识：<br>
   ####在PBFT链funcs：<br>
   <P>阶段一：</p><br>
