@@ -1,5 +1,5 @@
-# trueChain
-trueChain里程碑<br>
+# trueChain 里程碑
+###### 翻译者：金燕琪
 ## 主要内容：
 <p>因此，我们正在制定一种混合共识机制，它的运行主要遵循以下几点：</p>
 1. 已被许可的BFT是在基于POW共识机制的网络中的几个节点上运行的。<br>
@@ -12,9 +12,12 @@ trueChain里程碑<br>
 8. 我们最终会支持分享BFT委员会的节点，提高可扩展性。<br>
 9. 补偿基础结构，如果节点规格不一致性（比如在节点池中不同的CPU /内存/网络带宽等）最终都会将成为共识的一部分，加快交易。<br>
 10. 因此，智能合约的执行只会发生在TVM（BFT节点），我们确实认为在混合设置中应该从POW节点支持部署，从而引发关于状态复制的问题。<br>
+
 **注意：我们可能需要改变稳固性以及以太坊目前的轻钱包，这正是我们把它作为框架的选择。<br>**
+
 ### 时间计划：<br>
-#### TODO:在时间线中添加规范或者伪代码的细节<br>
+#### TODO:在时间计划中添加规范或者伪代码的细节<br>
+
 <table border=0 cellpadding=0 cellspacing=0 width=635 style='border-collapse:
  collapse;table-layout:fixed;width:477pt'>
  <col width=50 style='mso-width-source:userset;mso-width-alt:1600;width:38pt'>
@@ -312,10 +315,13 @@ trueChain里程碑<br>
   <p style="text-align=right">(Q2)4、5、6月</p>
   <p style="text-align=right">(Q3)7、8、9月</p>
   <p style="text-align=right">(Q4)10、11、12月</p>
-###核心共识：<br>
-####在PBFT链funcs：<br>
+  
+  ### 核心共识：<br>
+  #### 在PBFT链funcs：<br>
+  
   <P>阶段一：</p><br>
-  *更新: 进一步细分<br>*
+  
+  *更新: 进一步细分*<br>
   
 <table border=0 cellpadding=0 cellspacing=0 width=598 style='border-collapse:
  collapse;table-layout:fixed;width:448pt'>
@@ -389,16 +395,20 @@ trueChain里程碑<br>
 <p>阶段二：</p><br>
 1.时间戳验证（初链黄皮书图一）<br>
 2.create_shard() and speculative_transaction()（初链黄皮书图二）POW链中的funcs<br>
+
 #### POW链中的funcs<br>
+
 <p>阶段1：fPOW（果实链）</P>
-* re_elect()  - POW挖掘功能，使用[Theta,LRU,stake_in/out]( snailchain内部块的数量)，基于以下之一：<br>
+*re_elect()  - POW挖掘功能，使用[Theta,LRU,stake_in/out]( snailchain内部块的数量)，基于以下之一：<br>
 -由于腐败导致视图更改<br>
 -物理时间戳限制引发的第K天触发<br>
 -节点应该是DailyBFT委员会的过期Tstamp时间间隔会员<br>
 - update_snailchain()从N个PBFT节点接收done（_，_）散列，并由每个节点执行，然后将链上的节点写入到snailchain总账中。<br>
+
 ### 钱包工程<br>
 #### 模拟<br>
-<p>确定以下内容：</p>
+
+<p>确定以下内容</p>
 1.	分片大小的上下限<br>
 2.	Lambda安全参数边界<br>
 3.	Theta手动参数<br>
@@ -406,8 +416,10 @@ trueChain里程碑<br>
 1.	检查一致性和活性<br>
 2.	检查安全性<br>
 3.	腐败检查<br>
+
 ### 智能合约重新设计/可靠性<br>
 ### TVM / WASM<br>
+
 <P>文档</p><br>
 <P>附录</p><br>
 <P>符号</p><br>
