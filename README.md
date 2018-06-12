@@ -1,5 +1,5 @@
 # trueChain
-trueChain 翻译<br>
+trueChain里程碑<br>
 ##主要内容：
 <p>因此，我们正在制定一种混合共识机制，它的运行主要遵循以下几点：</p>
 1. 已被许可的BFT是在基于POW共识机制的网络中的几个节点上运行的。<br>
@@ -312,10 +312,10 @@ trueChain 翻译<br>
   <p style="text-align=right">(Q2)4、5、6月</p>
   <p style="text-align=right">(Q3)7、8、9月</p>
   <p style="text-align=right">(Q4)10、11、12月</p>
-  ###核心共识：<br>
-  ####在PBFT链funcs：<br>
+###核心共识：<br>
+####在PBFT链funcs：<br>
   <P>阶段一：</p><br>
-  *更新: 进一步细分*<br>
+  *更新: 进一步细分<br>*
   
 <table border=0 cellpadding=0 cellspacing=0 width=598 style='border-collapse:
  collapse;table-layout:fixed;width:448pt'>
