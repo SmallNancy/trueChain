@@ -1,6 +1,6 @@
 # trueChain
 trueChain里程碑<br>
-##主要内容：
+## 主要内容：
 <p>因此，我们正在制定一种混合共识机制，它的运行主要遵循以下几点：</p>
 1. 已被许可的BFT是在基于POW共识机制的网络中的几个节点上运行的。<br>
 2. BFT委员会是一个轮值委员会，能够有效地防止腐败现象的发生。<br>
@@ -13,8 +13,8 @@ trueChain里程碑<br>
 9. 补偿基础结构，如果节点规格不一致性（比如在节点池中不同的CPU /内存/网络带宽等）最终都会将成为共识的一部分，加快交易。<br>
 10. 因此，智能合约的执行只会发生在TVM（BFT节点），我们确实认为在混合设置中应该从POW节点支持部署，从而引发关于状态复制的问题。<br>
 **注意：我们可能需要改变稳固性以及以太坊目前的轻钱包，这正是我们把它作为框架的选择。<br>**
-###时间线：<br>
-####TODO:在时间线中添加规范或者伪代码的细节<br>
+### 时间线：<br>
+#### TODO:在时间线中添加规范或者伪代码的细节<br>
 <table border=0 cellpadding=0 cellspacing=0 width=635 style='border-collapse:
  collapse;table-layout:fixed;width:477pt'>
  <col width=50 style='mso-width-source:userset;mso-width-alt:1600;width:38pt'>
@@ -396,9 +396,9 @@ trueChain里程碑<br>
 -物理时间戳限制引发的第K天触发<br>
 -节点应该是DailyBFT委员会的过期Tstamp时间间隔会员<br>
 - update_snailchain()从N个PBFT节点接收done（_，_）散列，并由每个节点执行，然后将链上的节点写入到snailchain总账中。<br>
-###钱包工程<br>
-####模拟<br>
-<p>确定以下内容</p>
+### 钱包工程<br>
+#### 模拟<br>
+<p>确定以下内容：</p>
 1.	分片大小的上下限<br>
 2.	Lambda安全参数边界<br>
 3.	Theta手动参数<br>
@@ -406,8 +406,8 @@ trueChain里程碑<br>
 1.	检查一致性和活性<br>
 2.	检查安全性<br>
 3.	腐败检查<br>
-###智能合约重新设计/可靠性<br>
-###TVM / WASM<br>
+### 智能合约重新设计/可靠性<br>
+### TVM / WASM<br>
 <P>文档</p><br>
 <P>附录</p><br>
 <P>符号</p><br>
