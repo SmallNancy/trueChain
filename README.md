@@ -389,9 +389,9 @@ trueChain里程碑<br>
 <p>阶段二：</p><br>
 1.时间戳验证（初链黄皮书图一）<br>
 2.create_shard() and speculative_transaction()（初链黄皮书图二）POW链中的funcs<br>
-####POW链中的funcs<br>
+#### POW链中的funcs<br>
 <p>阶段1：fPOW（果实链）</P>
-*re_elect()  - POW挖掘功能，使用[Theta,LRU,stake_in/out]( snailchain内部块的数量)，基于以下之一：<br>
+* re_elect()  - POW挖掘功能，使用[Theta,LRU,stake_in/out]( snailchain内部块的数量)，基于以下之一：<br>
 -由于腐败导致视图更改<br>
 -物理时间戳限制引发的第K天触发<br>
 -节点应该是DailyBFT委员会的过期Tstamp时间间隔会员<br>
