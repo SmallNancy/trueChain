@@ -25,7 +25,7 @@ C）	联盟链是类似于联合国，欧盟作用的存在，它本质上也属
 4. 初链TrueChain
    公有链因为其共识机制的设计才有别于私有链与联盟链，但也正是由于现有的共识机制难以达到保证安全性与高效性的平衡，才制约了公有链的发展，于是初链应运而生。<br>
    
-   ![avatar](https://github.com/SmallNancy/trueChain/blob/master/pic4.png)
+   ![avatar](https://github.com/SmallNancy/trueChain/blob/master/pic4png.png)
    
 TrueChain初链目的就是为了在保证去中心化本质的同时，尽可能提升效率，其核心思想是将PBFT（Practical Byzantine Fault Tolerance实用拜占庭容错算法）与POW（Proof of Work工作证明）相结合的混合共识机制。<br>
 PBFT是联盟链与私有链如今使用最多的手段，相互信任的有限个超级节点对全链交易进行记录，这种手段存在一定的隐患——不排除超级节点“协同作案”的可能性，存在风险，这也与上文说到的联盟链与私有链的缺点“相辅相成”，没有达到真正意义上的去中心化。<br>
