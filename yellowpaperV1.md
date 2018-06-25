@@ -312,8 +312,8 @@ Gridcoin的分布式处理模型基于类似网络计算的伯克利开放网络
 
 ## 9，致谢
 我们对付出的孜孜不倦的努力，推动整个分布式协议进展，涵盖设计理念，实现细节以及前文所述的各个方案等架构的以下人员，致以我们最真诚的谢意：
-Rafael Pass, Miguel Castro, Satoshi Nakamoto, Vitalik Buterin, Gavin Wood, Ethan Buchman, Andrew Miller et al。向他们在论坛提出改进建议，通过参与Reddit、邮件组、聊天群、白皮书和黄皮书撰写等多种不懈努力致谢。
-对CNCF and Kubernetes 社区提出的混合云计算的灵感致谢
+- Rafael Pass, Miguel Castro, Satoshi Nakamoto, Vitalik Buterin, Gavin Wood, Ethan Buchman, Andrew Miller et al。向他们在论坛提出改进建议，通过参与Reddit、邮件组、聊天群、白皮书和黄皮书撰写等多种不懈努力致谢。
+- 对CNCF and Kubernetes 社区提出的混合云计算的灵感致谢
 
 参考文献
 
