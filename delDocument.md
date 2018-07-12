@@ -43,7 +43,7 @@ DEL致力于构建区块链全生态综合服务，下图展示了DEL的应用�
 
 全产业落地应用：以后各种去中心化的应用程序都可以搭建在DEL共有链上。
 
-![image](https://github.com/SmallNancy/trueChain/blob/master/picture/QQ%E5%9B%BE%E7%89%8720180712112704.png)
+![image](https://github.com/SmallNancy/trueChain/blob/master/picture/other.png)
 
 ##### 三、未来生活
 复式账本，即将实现人人获益的场景。应用企业可以在DEL上融合各自企业自己的区块链和开发DAPP。技术开发人员可以采用任意的语言开发任意应用场景的DAPP。消费者可以支付、消费、投资、理财等等。
