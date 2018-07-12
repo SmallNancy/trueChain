@@ -20,7 +20,7 @@ DEL复式账本目标是实现一个安全高速的共有链。DEL链实现智�
 ### DEL复式账本--开启区块链4.0时代 
 区块链的发展必须依托高新技术，不和技术挂钩的任何领域的发展都会无疾而终。DEL复式账本将技术创新、产业生态、未来的生活密切联系在一起。DEL将以崭新的令人向往的面貌出现在大家面前。
 
-       ![image](https://github.com/SmallNancy/trueChain/blob/master/picture/img11.png)
+  ![image](https://github.com/SmallNancy/trueChain/blob/master/picture/img11.png)
 
 - 技术创新：解决存储、效率、跨链融合等问题并与其它技术结合
 - 产业生态：落地应用，区块链技术落地应用生态及多生态的交错融合
@@ -42,6 +42,8 @@ DEL致力于构建区块链全生态综合服务，下图展示了DEL的应用�
 ![image](https://github.com/SmallNancy/trueChain/blob/master/picture/QQ%E5%9B%BE%E7%89%8720180712112704.png)
 
 全产业落地应用：以后各种去中心化的应用程序都可以搭建在DEL共有链上。
+
+<img src="https://github.com/SmallNancy/trueChain/blob/master/picture/other.png"  div align=center />
 
 ![image](https://github.com/SmallNancy/trueChain/blob/master/picture/other.png)
 
