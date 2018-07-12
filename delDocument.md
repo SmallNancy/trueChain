@@ -3,7 +3,7 @@
  
 ### 区块链的发展
 
-![image](https://note.youdao.com/favicon.ico)
+![image](https://github.com/SmallNancy/trueChain/blob/master/picture/dev.jpg)
 
  1. 区块链 v1.0版本--比特币为代表 <br>
    区块链v1.0的版本，大家很熟悉，那就是众所周知的比特币（虚拟货币）为代表的数字货币。比特币是依据挖矿算法等，经过大量计算产生，并且依靠密码学保证货币流通的安全性问题。比特币开创了去中心化密码币的先河，虽然存在效率低下等问题，但是仍然是区块链技术最成功的应用。
