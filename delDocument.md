@@ -50,3 +50,7 @@ DEL致力于构建区块链全生态综合服务，下图展示了DEL的应用�
 ##### 四、DEL发展
 
 ![image](https://github.com/SmallNancy/trueChain/blob/master/picture/QQ%E5%9B%BE%E7%89%8720180712112733.jpg)
+
+### 结语
+
+ DEL复式账本必将开启区块链4.0时代 ，带领人们走向更加美好的社会，让我们生活的世界更加的高效、开放、共享。
