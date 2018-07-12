@@ -12,9 +12,6 @@
 3. 区块链 v3.0版本--以EOS等为代表的共识协议<br>
  以EOS、Hyperledger Fabric为代表的共识协议得到了各国政府的认可。EOS软件架构采用股份授权证明机制（DPOS）,可以保证优势资源集中，从而构建效率极高的区块链系统。Fabric是超级账本区块链中的一个项目，它与其它区块链系统最大的不同就是，它是一个隐私的、许可的网络。参与者可以分别管理自身交易的系统。而Hyperledger Fabric则是一种独特的DLT（分布式账本实现技术），能够提供企业级的网络安全和可扩展性以及保密型。但是单一的合约程序设计语言支持以及区块大小依然限制着其应用范围。
 4. 区块链 v4.0版本--复式账本 <br>
-<div style="align: center">
-<img src="https://github.com/SmallNancy/trueChain/blob/master/picture/DEL4.png"/>
-</div>
 
 ![image](https://github.com/SmallNancy/trueChain/blob/master/picture/DEL4.png)
 
@@ -23,10 +20,8 @@ DEL复式账本目标是实现一个安全高速的共有链。DEL链实现智�
 ### DEL复式账本--开启区块链4.0时代 
 区块链的发展必须依托高新技术，不和技术挂钩的任何领域的发展都会无疾而终。DEL复式账本将技术创新、产业生态、未来的生活密切联系在一起。DEL将以崭新的令人向往的面貌出现在大家面前。
 
-![image](https://github.com/SmallNancy/trueChain/blob/master/picture/img11.png)
-<div style="align: center">
-<img src="https://github.com/SmallNancy/trueChain/blob/master/picture/img11.png"/>
-</div>
+       ![image](https://github.com/SmallNancy/trueChain/blob/master/picture/img11.png)
+
 - 技术创新：解决存储、效率、跨链融合等问题并与其它技术结合
 - 产业生态：落地应用，区块链技术落地应用生态及多生态的交错融合
 - 未来生活：建立区块链4.0时代下的信任社会 <br>
