@@ -13,6 +13,7 @@
  以EOS、Hyperledger Fabric为代表的共识协议得到了各国政府的认可。EOS软件架构采用股份授权证明机制（DPOS）,可以保证优势资源集中，从而构建效率极高的区块链系统。Fabric是超级账本区块链中的一个项目，它与其它区块链系统最大的不同就是，它是一个隐私的、许可的网络。参与者可以分别管理自身交易的系统。而Hyperledger Fabric则是一种独特的DLT（分布式账本实现技术），能够提供企业级的网络安全和可扩展性以及保密型。但是单一的合约程序设计语言支持以及区块大小依然限制着其应用范围。
 4. 区块链 v4.0版本--复式账本 <br>
 
+ <div style="align: center">
  ![image](https://github.com/SmallNancy/trueChain/blob/master/picture/DEL4.png)
 
 DEL复式账本目标是实现一个安全高速的共有链。DEL链实现智能合约容器化和区块数据能够分布式存储。
@@ -20,6 +21,7 @@ DEL复式账本目标是实现一个安全高速的共有链。DEL链实现智�
 ### DEL复式账本--开启区块链4.0时代 
 区块链的发展必须依托高新技术，不和技术挂钩的任何领域的发展都会无疾而终。DEL复式账本将技术创新、产业生态、未来的生活密切联系在一起。DEL将以崭新的令人向往的面貌出现在大家面前。
 
+<div style="align: center">
 ![image](https://github.com/SmallNancy/trueChain/blob/master/picture/img11.png)
 
 - 技术创新：解决存储、效率、跨链融合等问题并与其它技术结合
@@ -38,11 +40,12 @@ Pow和Pos共识机制都有一定的缺陷，于是DEL的DPOS共识机制应运�
 
 ##### 二、产业生态
 DEL致力于构建区块链全生态综合服务，下图展示了DEL的应用综合生态：
-
+<div style="align: center">
 ![image](https://github.com/SmallNancy/trueChain/blob/master/picture/QQ%E5%9B%BE%E7%89%8720180712112704.png)
 
 全产业落地应用：以后各种去中心化的应用程序都可以搭建在DEL共有链上。
 
+<div style="align: center">
 ![image](https://github.com/SmallNancy/trueChain/blob/master/picture/other.png)
 
 ##### 三、未来生活
