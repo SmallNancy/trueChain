@@ -24,6 +24,8 @@ PBFT接点的通讯效率可以保证多个智能合约或商业应用同时处�
 
 #### 初链的产品矩阵<br>
 我呢用一张图来展示，这样子就比较清晰可见。
+
 ![image]( https://github.com/SmallNancy/trueChain/blob/master/picture/block_2.png)
+
 #### 结语<br>
 本文仅仅是为了让大家了解区块链，了解初链，具体的详细的技术文档有兴趣的开发者或者业余爱好者请戳我们的github：https://github.com/truechain 这里有非常详细的资料让你走进区块链的世界。
