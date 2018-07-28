@@ -29,4 +29,4 @@ PBFT接点的通讯效率可以保证多个智能合约或商业应用同时处�
 
 #### 结语<br>
 本文仅仅是为了让大家了解区块链，了解初链，具体的详细的技术文档有兴趣的开发者或者业余爱好者请戳我们的github：https://github.com/truechain 这里有非常详细的资料让你走进区块链的世界。
-CSDN地址： ![image](https://blog.csdn.net/smallnancy/article/details/81253895)
+CSDN地址： https://blog.csdn.net/smallnancy/article/details/81253895
